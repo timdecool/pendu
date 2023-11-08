@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C/DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+
+<!--
+NOM DU SCRIPT : index.htm
+REALISATION : Tim Decool
+DATE DE CREATION :14/06/2023
+DERNIERE MODIFICATION : 15/06/2023
+OBJET : pendu v1
+-->
+
+<!-- Début script HTML -->
+<html>
+    <!-- En-tête script HTML -->
+    <head>
+        <!-- Balise meta -->
+        <meta charset="UTF-8">
+        <meta HTTP-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Titre du script HTML -->
+        <title>JEU DU PENDU</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <!-- Section body du script HTML -->
+    <body>
+        <div class="container">
+            <header>
+                <h1>JEU DU PENDU</h1>
+
+                <div id="pendu">
+                    <img id="imgpendu" src="Images/pendu12.png">    
+                </div>
+
+                <nav>
+                    <form>
+                        <legend>Nombre de lettres :</legend>
+                        <input type="radio" id="6" name="nbLettres" value="6" class="transition-couleur">
+                        <label for="6">6</label>
+        
+                        <input type="radio" id="7" name="nbLettres" value="7" class="transition-couleur">
+                        <label for="7">7</label>
+        
+                        <input type="radio" id="8" name="nbLettres" value="8" class="transition-couleur">
+                        <label for="8">8</label>
+        
+                        <input type="radio" id="9" name="nbLettres" value="9" class="transition-couleur" checked>
+                        <label for="9">9</label>
+        
+                        <input type="radio" id="10" name="nbLettres" value="10" class="transition-couleur">
+                        <label for="10">10</label>
+        
+                        <input type="radio" id="11" name="nbLettres" value="11" class="transition-couleur">
+                        <label for="11">11</label>
+                    </form>
+                    <button id="newGame" class="transition-couleur">Go !</button>                
+                </nav>
+            </header>
+            
+        
+                <div id="espaceJeu">
+                    <div id="grille">
+        
+                    </div>
+            
+                    <div id="lettres">
+                        <div class="lettre">A</div>
+                        <div class="lettre">B</div>
+                        <div class="lettre">C</div>
+                        <div class="lettre">D</div>
+                        <div class="lettre">E</div>
+                        <div class="lettre">F</div>
+                        <div class="lettre">G</div>
+                        <div class="lettre">H</div>
+                        <div class="lettre">I</div>
+                        <div class="lettre">J</div>
+                        <div class="lettre">K</div>
+                        <div class="lettre">L</div>
+                        <div class="lettre">M</div>
+                        <div class="lettre">N</div>
+                        <div class="lettre">O</div>
+                        <div class="lettre">P</div>
+                        <div class="lettre">Q</div>
+                        <div class="lettre">R</div>
+                        <div class="lettre">S</div>
+                        <div class="lettre">T</div>
+                        <div class="lettre">U</div>
+                        <div class="lettre">V</div>
+                        <div class="lettre">W</div>
+                        <div class="lettre">X</div>
+                        <div class="lettre">Y</div>
+                        <div class="lettre">Z</div>
+                    </div>
+                    
+                    <div id="suivi">
+    
+                        <div id="tentatives">
+                        </div>
+    
+                    </div>
+    
+                </div>
+
+        </div>
+        <!-- Lien fichier JS -->
+        <script src="script.js"></script>
+    </body>
+
+</html>
